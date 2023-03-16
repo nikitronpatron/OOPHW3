@@ -1,6 +1,5 @@
-import java.util.random.RandomGenerator;
-
-public class Notebook implements Comparable<Notebook> {
+public class Notebook //implements Comparable<Notebook> 
+{
     private int cost;
     private int ram;
     private int ssd;
@@ -32,11 +31,11 @@ public class Notebook implements Comparable<Notebook> {
         return ram;
     }
 
-    @Override
-    public int compareTo(Notebook o) {
-        if (this.cost > o.cost) return 1;
-        else if (cost == o.cost) return 0;
-        else return -1;
-    }
+    // @Override
+    // public int compareTo(Notebook o) {
+    //     if (this.cost > o.cost) return 1;
+    //     else if (cost == o.cost) return 0;
+    //     else return -1;
+    // }
 
 }
