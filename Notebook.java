@@ -1,8 +1,7 @@
-public class Notebook //implements Comparable<Notebook> 
+public class Notebook
 {
     private int cost;
     private int ram;
-    private int ssd;
 
     public Notebook(int cost, int ram)
     {
@@ -30,12 +29,4 @@ public class Notebook //implements Comparable<Notebook>
     public int getRam() {
         return ram;
     }
-
-    // @Override
-    // public int compareTo(Notebook o) {
-    //     if (this.cost > o.cost) return 1;
-    //     else if (cost == o.cost) return 0;
-    //     else return -1;
-    // }
-
 }

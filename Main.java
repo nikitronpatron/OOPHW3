@@ -1,3 +1,12 @@
+// Создать класс Notebook с полями:
+// 1. Стоимость (int)
+// 2. Оперативная память (int)
+// Нагенерить объектов этого класса, создать список и отсортировать его в трех вариантах:
+// 1. По возрастанию цены
+// 2. По убыванию цены
+// 3. По оперативке по убыванию. Если оперативки равны - по убыванию цены.
+// 4.+ придумать свои параметры и отсортировать по ним
+
 import java.util.*;
 public class Main
 {
@@ -5,7 +14,7 @@ public class Main
     {
         Comparator<Notebook> CompareToMaxMin = new CompareToMaxMin();
         Comparator<Notebook> CompareToMinMax = new CompareToMinMax();
-        Comparator<Notebook> CompareToRAM = new CompareToRam();
+        Comparator<Notebook> CompareToRam = new CompareToRam();
 
         Notebook notebook1 = new Notebook(17990, 4);
         Notebook notebook2 = new Notebook(49990, 8);
@@ -51,11 +60,11 @@ public class Main
         }
         System.out.println();
 
-        // notebooks.sort(CompareToRam);
-        // for (Notebook notebook : notebooks)
-        // {
-        //     System.out.println(notebook);
-        // }
+        notebooks.sort(CompareToRam);
+        for (Notebook notebook : notebooks)
+        {
+            System.out.println(notebook);
+        }
 
     }    
 }
